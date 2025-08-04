@@ -39,5 +39,5 @@ end
 
 # Rack::Test::Methods needs this to run our controller
 def app
-  Rack::Builder.parse_file('config.ru').first
+  Rack::Builder.parse_file('config.ru')
 end
