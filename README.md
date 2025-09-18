@@ -19,15 +19,15 @@ for these tables looks like:
 To set up the application, run these commands:
 
 ```console
-$ bundle install
-$ bundle exec rake db:migrate db:seed
+bundle install
+bin/rake db:migrate db:seed
 ```
 
 You can run the app and explore your API in the browser by using the custom Rake
 task:
 
 ```console
-$ bundle exec rake server
+bin/rake server
 ```
 
 ## Instructions
@@ -53,7 +53,7 @@ Let's work on the first deliverable, defining a route that responds to a `GET`
 request to `/bakeries` and returns an array of JSON objects for all bakeries in
 the database.
 
-Start by running the server with `bundle exec rake server`. Then, in your
+Start by running the server with `bin/rake server`. Then, in your
 browser, visit that endpoint with the server running:
 [http://localhost:9292/bakeries](http://localhost:9292/bakeries). You should see
 a helpful error message from Sinatra, like this:
@@ -96,7 +96,7 @@ end
 ```
 
 Try refreshing the page now and make sure the response matches what you expect.
-Then, run `learn test` and work through the remaining deliverables in a similar
+Then, run `bin/rspec` and work through the remaining deliverables in a similar
 manner.
 
 ### Routes
